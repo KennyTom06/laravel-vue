@@ -4,6 +4,7 @@
     <option name="directories">
       <list>
         <option value="$PROJECT_DIR$/backend-challenge/tests" />
+        <option value="$PROJECT_DIR$/backend-challenge/backend-challenge/tests" />
       </list>
     </option>
   </component>

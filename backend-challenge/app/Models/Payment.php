@@ -8,4 +8,21 @@ use Illuminate\Database\Eloquent\Model;
 class Payment extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'amount',
+        'state',
+        'user_id',
+        'amortization_id'
+    ];
+
+    public function amortization()
+    {
+        return $this->belongsTo(Amortization::class);
+    }
+
+    public function user()
+    {
+        return $this->belongsTo(User::class);
+    }
 }

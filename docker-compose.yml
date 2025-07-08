@@ -14,13 +14,13 @@ services:
       volumes:
         - full-stack-challenge-data:/var/lib/mysql
       ports:
-        - '3306:3306'
+        - '3307:3306'
   backend-challenge:
     container_name: backend-challenge
     build:
       context: ./backend-challenge
     ports:
-      - '80:80'
+      - '8008:80'
     volumes:
       - ./backend-challenge:/var/www/html
       - ./backend-challenge/apache/default.conf:/etc/apache2/sites-enabled/000-default.conf
@@ -31,7 +31,7 @@ services:
     build:
       context: ./frontend-challenge
     ports:
-      - "8080:8080"
+      - "8009:8080"
     volumes:
        - ./frontend-challenge:/usr/src/app/frontend-challenge
        - /usr/src/app/frontend-challenge/node_modules

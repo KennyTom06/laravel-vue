@@ -43,3 +43,6 @@ docker-compose -f docker-compose.yml up -d
 
 - We are interested in seeing your problem-solving approach and coding style, so please avoid using external libraries other than Vue, TypeScript and TailwindCSS for this particular challenge (extra credit in the frontend-challenge is excluded - show your creativity)
 - Remember to comment your code to explain your thought process, implementation choices, and any complex logic.
+
+## Docs 📝
+https://docs.google.com/document/d/1wjv3xCQAgq2kUFDQqz1VX56k2oQFw6bTkOv-Z6-HtYI/edit?tab=t.0

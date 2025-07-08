@@ -8,4 +8,27 @@ use Illuminate\Database\Eloquent\Model;
 class Amortization extends Model
 {
     use HasFactory;
+
+    protected $fillable = [
+        'amount',
+        'state',
+        'schedule_date',
+        'project_id',
+        'promoter_id'
+    ];
+
+    public function project()
+    {
+        return $this->belongsTo(Project::class);
+    }
+
+    public function payments()
+    {
+        return $this->hasMany(Payment::class);
+    }
+
+    public function promoter()
+    {
+        return $this->belongsTo(Promoter::class);
+    }
 }
